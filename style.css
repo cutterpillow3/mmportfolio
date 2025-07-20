@@ -149,3 +149,7 @@ p {
     margin-bottom: 20px;
     color: #829778;
 }
+
+html {
+    scroll-behavior: smooth;
+}
