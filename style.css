@@ -1,0 +1,152 @@
+:root {
+    --primary-color: #829778;
+    --secondary-color: #D2B48C;
+    --text-color: #333;
+    --background-color: #E0EEE0;
+    --button-color: #dfecdf;
+    --button-hover-color: #d6c8ba;
+    --fun-fact-color: #829778;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #dfecdf;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--button-hover-color);
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.container {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+button, #funFactButton {
+    background-color: var(--button-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, #funFactButton:hover {
+    background-color: var(--button-hover-color);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 30px;
+    border-top: 2px solid var(--secondary-color); /* Optional */
+}
+
+.hover-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    transition: transform 0.3s ease; /* Changed from background-image */
+}
+
+.hover-image:hover {
+    transform: scale(1.05); /* Slightly enlarges the image */
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Lora', sans-serif;
+    font-weight: normal;
+}
+
+h2, nav a, button, p, h3 { 
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+#funFact {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: var(--fun-fact-color);
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        padding: 10px;
+    }
+}
